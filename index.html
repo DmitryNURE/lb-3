@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="page">
+    <div class="title">
+        <h2>Вариант 7, виконав ст. гр. КІУКІ-19-4 Кирилеко Д.В.</h2>
+        <span>Отобразить рисунок, согласно выбранному пункту выпадающего списка.
+            Предоставить возможность изменять параметры изображения (ширину и высоту, толщину рамки, альтернативный текст)</span>
+    </div>
+
+    <div class="main-wrapper">
+        <div class="image-wrapper">
+            <span class="image-descr">Some description...</span>
+            <img class="image" src="img/img-1.jpg" alt="img">
+        </div>
+
+        <div class="actions-wrapper">
+            <div class="settings">
+                <img class="settings-icon" src="https://cdn1.iconfinder.com/data/icons/material-design-icons-light/24/settings-256.png" alt="settings">
+
+                <ul class="settings-list">
+                    <li>
+                        <span>Width</span>
+
+                        <input type="range" id="width" name="width" min="1" max="90" />
+                    </li>
+                    <li>
+                        <span>Height</span>
+
+                        <input type="range" id="height" name="height" min="1" max="100" />
+                    </li>
+                    <li>
+                        <span>Border weight</span>
+
+                        <input type="range" id="weight" name="weight" min="1" max="30"/>
+                    </li>
+                    <li>
+                        <span>Description</span>
+
+                        <input id="descr" name="descr" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script defer src="script.js"></script>
+</body>
+</html>
